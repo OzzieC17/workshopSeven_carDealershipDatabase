@@ -53,3 +53,7 @@ FOREIGN KEY (dealership_id) REFERENCES dealerships(dealership_id);
 UPDATE sales_contracts
 SET dealership_id = 2
 WHERE contract_id = 1;
+INSERT INTO vehicles (VIN, make, model, year, color, mileage, price, SOLD)
+VALUES ('1FA6P8TH5L5100001', 'Ford', 'Mustang', 2021, 'Red', 5000, 27000.00, FALSE);
+INSERT INTO inventory (dealership_id, VIN)
+VALUES (1, '1FA6P8TH5L5100001');
