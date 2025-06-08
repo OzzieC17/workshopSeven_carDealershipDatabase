@@ -15,3 +15,6 @@ WHERE v.make = 'Ford'
 SELECT * FROM sales_contracts
 WHERE dealership_id = 2
 	AND sales_date BETWEEN '2025-01-01' AND '2025-12-31';
+SELECT VIN, make, model, year, color, mileage, price
+FROM vehicles
+WHERE mileage < 20000;
